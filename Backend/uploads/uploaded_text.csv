@@ -1,0 +1,463 @@
+source_text
+"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Liste des figures
+
+Figure 1: Logo de NeoLedge	8
+Figure 2: Logo de Elise	10
+Figure 3 Modèle UML	12
+Figure 4: Méthode SCRUM	14
+Figure 5 : Release 1	27
+Figure 6 :  Installation.NET	29
+Figure 7 : installation de visual studio 2022	29
+Figure 8 : Microsoft SQL Server Management Studio 19	30
+Figure 9 : voir tout les todos	31
+Figure 10 : ajouter neauveau todo	31
+Figure 11 : modifier Todo	32
+Figure 12 : supprimer un todo	32
+Figure 13 : les packages ELSA installé	33
+Figure 14 : autre packages installé	33
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Liste des Tableaux
+
+Tableau 1 : product backlog	23
+Tableau 2 : Sprint Backlog du sprint 1	27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+Introduction Générale
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapitre 1 : Présentation du cadre du projet
+
+
+
+
+
+
+      Introduction 
+Le contexte général du projet est présenté dans ce chapitre introductif. Nous présenterons 
+d'abord notre organisme d'accueil. Ensuite, nous expliquerons les problèmes à résoudre et la solution proposée pour donner un aperçu de notre projet. Enfin, nous fournirons une description de la méthode que nous utilisons pour mener à bien le projet.
+Présentation de l’organisme d’accueil 
+Acteur indépendant et à dimension internationale, NeoLedge est une société française en forte croissance, qui s’appuie sur un réseau de partenaires privilégiés en Europe, en Amérique du Nord et en Afrique. 
+Éditeur spécialisé dans la gestion électronique de documents, NeoLedge compte à son actif des centaines de clients, des dizaines de milliers d’utilisateurs quotidiens et des millions de documents gérés par ses solutions, dans le secteur public comme dans le secteur privé.
+Partenaire certifié Gold de Microsoft en ce qui concerne le développement d’applications et les plateformes cloud, NeoLedge accompagne des organisations pendant leur transition numérique. NeoLedge s’appuie depuis ses débuts sur les techniques développées par Microsoft.
+
+La figure 1 représente le logo de NeoLedge.
+
+					Figure 1: Logo de NeoLedge
+La structure hiérarchique et les différents départements qui composent NeoLedge peuvent être visualisés à l'aide de l'organigramme suivant :
+
+
+
+
+Présentation du projet 
+Produits présentés par NeoLedge 
+NeoLedge propose une gamme complète de solutions de gestion électronique de documents (GED) et de gestion de contenus (ECM) pour les entreprises et les administrations.
+
+• ECM Elise : Pour les entreprises de toutes tailles, qui sont confrontées à une gestion complexe des flux d’informations nécessitant de nombreuses interactions avec des tiers, la solution ECM Elise, éditée par NeoLedge, propose des fonctions automatisées pour la capture des flux multicanaux, la gestion des dossiers et l’orchestration des processus métiers.
+
+• DocFactory : Pour les entreprises à la recherche d’une solution performante capable de les aider dans leur transformation numérique et leur passage au zéro papier, DocFactory est une solution numérique tout-En-un offrant des fonctions centralisées de numérisation, conversion, et capture de documents électroniques, ainsi que d’export et de signature électronique.
+
+Contrairement aux solutions propriétaires ne gérant pas le processus de dématérialisation dans sa globalité, DocFactory permet d’industrialiser l’ensemble des opérations de capture des flux de documents jusqu’à leur intégration dans votre système
+d’information.
+
+• Illico : Pour les élus et dirigeants de villes de toutes tailles, engagées dans unepolitique de transition numérique grâce à des outils innovants qui simplifient leur fonctionnement, illico offre aux citoyens et aux équipes de la ville des services de confiance pour la dématérialisation, le traitement des requêtes, la gestion du courrieret l’automatisation des processus métiers. Contrairement aux solutions en silos ne gérant pas la continuité des processus entre les citoyens et les agents, “illico powered by Elise” est un service illimité, rapide à mettre en œuvre, conçu pour les villes et  les réseaux de villes.
+Contexte du projet 
+Le présent projet intitulé « Workflow BPMN » est réalisé dans le cadre de projet de fin
+d’études pour l’obtention du diplôme de licence national en technologie d’information au
+sein de l’Institut Supérieur des Études Technologiques de Bizerte.
+Ce projet a été réalisé dans la société NeoLedge durant la période s’étalant du 05
+février 2023 jusqu’à 25 mai 2024.
+
+Figure 2: Logo de Elise
+
+Étude de l’existant 
+Le développement logiciel fait face à des défis, notamment traduire les besoins fonctionnels en code. 
+Cela demande une compréhension des attentes du client et une expertise technique. Les développeurs doivent analyser des documents détaillés, un processus long et complexe. Ils doivent aussi assurer une grande précision pour que le code corresponde aux exigences, ce qui peut allonger le cycle de développement et augmenter le stress. 
+Les malentendus dans la conversion des besoins peuvent causer des retards et nécessiter des ajustements coûteux, obligeant à plus de clarifications et à une communication accrue avec les parties prenantes, affectant la productivité. 
+
+Analyse de l’existant 
+Les problèmes constatés au niveau de l'existant comprennent un processus de développement basé sur des spécifications détaillées : 
+Développement basé sur des spécifications . 
+Manque de visualisation des processus métier .
+Processus d'exécution manuelle .
+Suivi de la performance limitée .
+
+Solution proposée :
+Notre objectif consiste à concevoir un moteur de workflow BPMN qui sera intégré à la plateforme de gestion, Elise. 
+L'objectif de cette solution est d'offrir une gamme complète d'outils afin d'optimiser la gestion des processus métier. 
+Notre solution permettra d'abord une modélisation graphique facile à comprendre des processus, ce qui facilitera leur compréhension et leur communication au sein de l'organisation. 
+Nous utiliserons la bibliothèque BPMN.IO, qui est connue pour sa flexibilité et sa compatibilité avec Elise, pour y parvenir. 
+Ensuite, notre solution comprendra des fonctionnalités avancées pour l'exécution des processus, telles que la gestion des tâches, les flux de travail et les règles de l'entreprise. Pour cette étape, nous utiliserons la bibliothèque puissante Elsa Workflow.
+Enfin, notre solution fournira des tableaux de bord personnalisables et des rapports détaillés pour suivre les indicateurs de performance importants des processus.
+ Les utilisateurs pourront identifier les domaines d'amélioration et d'optimisation de leurs opérations grâce à ces analyses. 
+Dans l'ensemble, notre moteur de workflow BPMN pour Elise vise à révolutionner la gestion des processus métier en offrant une solution complète, intuitive et puissante, qui simplifie les opérations quotidiennes, améliore l'efficacité opérationnelle et stimule la croissance de l'entreprise.
+Méthodologies et formalisme adopté
+Au cours de cette section, nous détaillons les techniques utilisées pour avancer dans la réalisation de notre projet.
+Méthodologie de modélisation et de conception
+Une méthode de modélisation et de conception est un processus qui permet de formaliser les étapes préliminaires du développement d'un système afin de rendre ce développement plus fidèle aux besoins du client lors de la réalisation d'un projet informatique. Pour cette raison, nous avons opté pour UML (Unified Modeling Language) pour la conception de notre projet.
+UML (Unified Modeling Language) est un langage universel de modélisation orientée objet,
+établi comme un standard par l'OMG (Object Management Group) et dans le domaine public, qui offre une notation visuelle pour communiquer et concevoir des architectures logicielles.
+
+
+
+
+Figure 3 Modèle UML
+Méthodologie de travail
+     Le choix entre les méthodes classiques et agiles de gestion de projet dépend de la complexité du projet, des exigences du client et du degré de flexibilité requis. Les méthodes classiques conviennent mieux aux projets bien définis avec des calendriers clairs et des risques identifiés. En revanche, les méthodes agiles sont préférables pour les projets plus vastes où les spécifications ne sont pas claires ou les besoins du client évoluent. Agile permet une adaptation continue en fonction des retours du client, réduisant ainsi le risque de recommencer à zéro. En fin de compte, le choix de la méthode doit correspondre aux exigences uniques de chaque projet pour maximiser ses chances de succès.
+Choix méthodologique
+Nous nous sommes inspirés du framework Scrum, donc notre choix méthodologique correspond à notre projet. Scrum est largement reconnu comme le framework de gestion de projet le plus couramment utilisé, le mieux documenté et soutenu. Il offre un cadre de travail structuré pour les équipes pluridisciplinaires, avec une attention particulière portée sur l'adaptabilité et la collaboration, permettant de répondre efficacement aux problèmes complexes et évolutifs.
+Pourquoi Scrum 
+Dans le cadre de notre projet et afin d’assurer le bon déroulement des différentes phases de ce dernier, nous avons opté pour le framework agile Scrum pour la conception et le développement de notre système pour des raisons bien déterminées. En effet, le framework Scrum s’adapte parfaitement à la décomposition de notre projet de fin d’études. 	
+
+Il se base sur les avantages suivants : 
+Plus de souplesse et de réactivité. 
+Grande capacité d’adaptation au changement grâce à des itérations courtes.
+Satisfaire au mieux les besoins du client. 
+
+SCRUM est une méthodologie agile qui consiste à avoir une équipe soudée orientant le projet 
+au fil de son avancement afin d’atteindre un but. Cette approche est à la fois dynamique et productive, engendre la réalisation des fonctionnalités par itération en incluant la participation du client. Chaque itération peut durer de deux à quatre semaines, à la fin de chaque sprint un produit fonctionnel doit être livré. En effet, Scrum définit trois rôles qui sont : 
+Product Owner (Le gestionnaire de produit) : Le responsable du produit de l’équipe projet client et il représente les utilisateurs finaux. C’est lui qui va définir et prioriser la liste des fonctionnalités du produit et choisir la date et le contenu de chaque sprint sur la base des valeurs (charges) qui lui sont communiquées par l’équipe.
+Scrum Master (Le maître de Scrum) : Véritable facilitateur sur le projet, il veille à ce que chacun puisse travailler au maximum de ses capacités en éliminant les obstacles et en protégeant l’équipe des perturbations extérieures.
+L’équipe de développement (L’équipe de projet) : L’équipe de réalisation contient au minimum deux développeurs. Elle regroupe tous les rôles habituellement nécessaires à un projet, à savoir l’architecte, le concepteur, le développeur, le testeur, etc.
+Figure 4: Méthode SCRUM
+
+Environnement de développement
+Avant de commencer à mettre en œuvre notre projet, nous décrivons l'environnement et les outils de travail que nous utiliserons. Nous définirons d'abord l'environnement matériel, puis l'environnement logiciel. Enfin, nous présenterons les divers frameworks et langages que nous utiliserons pour ce projet.
+Environnement matériel
+
+
+
+
+
+Environnement logiciel
+Au cours de cette section, nous dresserons une liste des outils utilisés pour étudier et mettre en place notre application tout au long du projet.
+
+ Visual Studio Code logo:
+Un éditeur de code extensible développé par Microsoft pour Windows, Linux et macOS. Les fonctionnalités incluent la prise en charge du débogage, la mise en évidence de la syntaxe, la complétion intelligente du code, les snippets, la refactorisation du code et Git intégrer. [32]
+
+Visual Studio logo :
+Visual Studio est un environnement de développement intégré (IDE) extensible, complet et gratuit pour créer des applications modernes pour Android, iOS, Windows, ainsi que des applications web et des services cloud. 
+
+
+
+
+
+
+
+
+
+
+
+
+Conclusion 
+Au cours de ce chapitre, qui est une étape essentielle pour établir les principes de base de notre projet. Nous avons présenté l'organisme d'accueil du projet ainsi que les attentes. En effet, afin de mieux comprendre les fonctionnalités de notre solution et de révéler les limites de la solution existante, nous avons mené une étude de l'existant. De plus, nous avons déterminé le cadre du travail et la méthodologie à utiliser pour ce projet. Le chapitre suivant explique la conception de l'application en détaillant ses spécifications, ses acteurs et le backlog de produits contenant ses fonctionnalités.
+
+
+
+
+
+
+
+
+
+Chapitre 3 : Planification du Backlog Produit
+
+Introduction
+La planification joue un rôle essentiel dans la réalisation d’un projet et sert de fondement à 
+chaque application. Ce chapitre se concentre sur la planification du backlog produit, qui vise à clarifier les besoins à satisfaire de manière précise.
+Identifications des acteurs :
+Dans notre projet, les utilisateurs sont des entités externes au système de modélisation qui 
+interagissent directement avec des personnes ou des appareils. Chaque utilisateur a un ensemble d'actions qui correspondent aux fonctions dont il a besoin. Notre projet a deux acteurs différents, ayant chacun un rôle correspondant.
+L'acteur Utilisateur est un employé de l'entreprise. Il possède les caractéristiques suivantes :
+En utilisant une gamme de symboles standardisés pour représenter le flux de travail, ajouter des activités spécifiques à un processus métier.
+établir des règles métiers  pour automatiser certaines décisions et optimiser l'efficacité opérationnelle.
+Relier les activités du processus aux fonctionnalités existantes de la solution Elise.
+Suivre l'état d'avancement des processus en cours d'exécution pour surveiller les performances et de distinguer chaque activité réussie or échouée.
+Générer des rapports personnalisés sur les performances des processus en analysant des indicateurs clés tels que les temps de traitement, les taux de réussite et les écarts par rapport aux objectifs fixés.
+Changer la couleur de chaque activité pour une meilleure visualisation et organisation du processus métier.
+Importer un processus dans l'application ou le sauvegarder une fois créé (local Storage) ou modifié.
+Zoomer (zoom in) ou Dézoomer (zoom out) sur le diagramme de processus.
+Sauvegarder les processus dans la base de données.
+Ajouter des commentaires pour chaque activité afin de faciliter la collaboration et la traçabilité des actions.
+
+L’acteur Admin : Il a comme fonctionnalités :
+Gestion des autorisations des utilisateurs pour accéder, modifier ou exécuter divers processus afin de protéger les données.
+Les besoins non fonctionnels
+Notre application doit contenir certaines contraintes indispensables pour son bon 
+fonctionnement.
+Maintenabilité : le code de l’application développé doit être lisible et compréhensible afin d’assurer son état extensible et évolutif par les autres développeurs de l’ERP.
+
+La convivialité : les interfaces de l’application doivent être simples faciles et homogènes avec les interfaces de l’ERP de la société.
+
+Fiabilité : l’application doit être fonctionnelle en minimisant les erreurs d'extraction de données, ce qui peut entraîner des retards et des pertes de temps.
+
+La performance : notre application doit être capable de lire rapidement les informations des factures scannées et d'extraire avec précision les données.
+Les User stories
+Les user stories représentent les descriptions d’exigences pour toutes fonctionnalités ou 
+“tâches” nécessaires au fonctionnement du produit ou du service en développement. Ils ont   
+été écrits par le Product Owner (Mr Walid AZOUZI) pour nous faciliter l'exécution et la compréhension des tâches.
+Qui : la fonctionnalité est faite pour qui
+Quoi : qu’est-ce que l’utilisateur veut faire
+Pourquoi : pourquoi il veut faire ceci Elle est confirmée par des critères d’acceptation rédigés au même moment que l’histoire. En tant que, je veux pour atteindre
+En tant que « Qui », je veux « Quoi », afin de « Pourquoi »
+
+
+
+
+Les User Stories de l’utilisateur
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Les User Stories de l’utilisateur
+
+
+
+
+
+
+
+
+
+
+
+Les User Stories de l’administrateur
+
+
+
+
+
+
+
+
+
+
+Product Backlog :
+
+
+
+Tableau 1 : product backlog
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conclusion 
+En conclusion, après la spécification des différentes fonctionnalités qui existent dans notre 
+projet, nous pouvant commencer par la réalisation du Release l’objet du chapitre suivant.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapitre 4 : Release 1  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introduction
+Ce chapitre présente en détail les sprints de première release commençant par le backlog, suivi des différents diagrammes élaborés pour la réalisation du première release, incluant le diagramme des cas d'utilisation, le diagramme d'analyse, le diagramme des classes et les diagrammes des séquences. Enfin, les interfaces graphiques de chaque sprint.
+
+Organisation des sprints :
+
+                                          
+Figure 5 : Release 1
+ 
+Sprint 1 « Etude de l’environnement » : 
+Sprint Goal : 
+Ce sprint est dédié à une étude approfondie de l'environnement de travail et à l'évaluation des différentes solutions envisageables afin de trouver l'outil le plus adapté pour assurer le succès de notre projet.
+
+ Sprint backlog
+
+Le tableau ci-dessous présente le Backlog de notre première sprint :
+
+					Tableau 2 : Sprint Backlog du sprint 1
+
+Implémentation de sprint : 
+
+Cette partie contient des captures écrans pour nos tâches réalisées dans ce sprint :
+La première technical story :
+
+Figure 6 :  Installation.NET
+
+
+Figure 7 : installation de visual studio 2022
+
+Figure 8 : Microsoft SQL Server Management Studio 19
+La deuxième Technical Story : 
+//Formation elise 
+
+La troisième Technical Story :
+Développement d'une application CRUD Todos basique avec ASP.NET. Tests effectués via Postman pour valider les opérations CRUD : 
+
+Figure 9 : voir tout les todos
+
+Figure 10 : ajouter neauveau todo
+
+Figure 11 : modifier Todo
+	
+Figure 12 : supprimer un todo
+Intégration d’ELSA Workflow, Ajout et configuration des bibliothèques nécessaires au projet : 
+   
+Figure 13 : les packages ELSA installé
+
+
+Figure 14 : autre package installé
+
+
+"
